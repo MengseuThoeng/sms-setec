@@ -1,5 +1,6 @@
 package com.reki.schoolsystem.service;
 
+import com.reki.schoolsystem.dto.StudentCreateRequestion;
 import com.reki.schoolsystem.dto.StudentUpdateRequest;
 import com.reki.schoolsystem.model.Student;
 
@@ -11,7 +12,7 @@ public interface StudentService {
 
     Student findById(Long id);
 
-    void save(Student student);
+    void save(StudentCreateRequestion studentCreateRequestion);
 
     void delete(Long id);
 

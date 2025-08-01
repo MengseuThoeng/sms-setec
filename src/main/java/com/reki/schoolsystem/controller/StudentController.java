@@ -1,6 +1,7 @@
 package com.reki.schoolsystem.controller;
 
 
+import com.reki.schoolsystem.dto.StudentCreateRequestion;
 import com.reki.schoolsystem.dto.StudentUpdateRequest;
 import com.reki.schoolsystem.model.Student;
 import com.reki.schoolsystem.service.StudentService;
@@ -28,7 +29,7 @@ public class StudentController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    void save(@RequestBody Student student){
+    void save(@RequestBody StudentCreateRequestion student){
         studentService.save(student);
     }
 

@@ -1,0 +1,15 @@
+spring.application.name: school-system
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5168/school_management
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    show-sql: true
+
